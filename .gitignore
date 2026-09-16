@@ -1,0 +1,25 @@
+# Build outputs
+build/
+
+# C / C++
+*.o
+*.out
+*.exe
+*.dSYM
+*.dSYM/
+
+# Java
+*.class
+*.jar
+
+# macOS
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/*
+!.vscode/tasks.json
+!.vscode/settings.json
