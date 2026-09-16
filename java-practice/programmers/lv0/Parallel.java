@@ -1,5 +1,3 @@
-package java.programmers.lv0;
-
 // https://school.programmers.co.kr/learn/courses/30/lessons/120875?language=java
 
 public class Parallel {
@@ -34,5 +32,27 @@ public class Parallel {
         int dy2 = point4[1] - point3[1];
 
         return dy1 * dx2 == dy2 * dx1;
+    }
+
+    // 로컬 테스트용
+    public static void main(String[] args) {
+        Parallel parallel = new Parallel();
+
+        int[][] dots1 = {
+                {1, 4},
+                {9, 2},
+                {3, 8},
+                {11, 6}
+        };
+
+        int[][] dots2 = {
+                {3, 5},
+                {4, 1},
+                {2, 4},
+                {5, 10}
+        };
+
+        System.out.println(parallel.solution(dots1)); // 1
+        System.out.println(parallel.solution(dots2)); // 0
     }
 }
