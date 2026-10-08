@@ -19,5 +19,19 @@ class Solution {
         }
         
         return stack.isEmpty();
+        
+        /*
+        Deque<String> stack = new ArrayDeque<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
+                stack.push(String.valueof(c));
+            } else if (c == ')') {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+            }
+        }
+        return stack.isEmpty();
+        */
     }
 }
