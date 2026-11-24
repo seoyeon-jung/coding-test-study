@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Solution {
+    public String solution(String s) {
+        // 한 번만 등장하는지 체크
+        // 사전 순으로 정렬
+        
+        String answer = "";
+        String[] arr = s.split("");
+        int count = 0;
+        
+        Arrays.sort(arr);
+        for (int i = 0; i < arr.length; i++){
+            count = 0;
+            for (int j = 0; j < arr.length; j++){
+                if (arr[i].equals(arr[j])) {
+                    count++;
+                }
+            }
+            if (count == 1) {
+                answer += arr[i];
+            }            
+        }
+        return answer;
+    }
+}
